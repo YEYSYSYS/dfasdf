@@ -1,1 +1,19 @@
+name: Discord Notification
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: REE OFFICIAL AST
+        uses: johnnyhuy/actions-discord-git-webhook@v1.0.0
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          color: '64a0c8'  # Change this to the desired color
+          content: 'TEST TO SEE IF DIS WORKS'
 
