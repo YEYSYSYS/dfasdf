@@ -1,1 +1,4 @@
+git add .github/workflows/discord-notification.yml
+git commit -m "Add Discord notification workflow"
+git push
 
